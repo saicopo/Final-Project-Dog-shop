@@ -8,6 +8,6 @@ const dogSchema = new moongoose.Schema({
   image: String,
 });
 
-const Dog = moongoose.model("dogs", dogSchema);
+const Dog = moongoose.model(process.env.DOG_COLLECTION, dogSchema);
 
 export default Dog;
