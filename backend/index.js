@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./config/databse.js";
 import {router as dogsRouter} from './routes/dogRoutes.js'
-// import { router as userRouter } from "./routes/routes.js";
+ import { router as sellerRouter } from "./routes/sellerRoutes.js";
 
 const server = express();
 
@@ -17,7 +17,8 @@ server.get("/", (req, res) => {
 });
 
 server.use("/api/dogs", dogsRouter);
-// server.use("/api/dogs", dogsRouter);
+
+server.use("/api/sellers", sellerRouter);
 
 
 server.listen(port, () => {

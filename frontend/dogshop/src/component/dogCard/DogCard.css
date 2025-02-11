@@ -1,0 +1,9 @@
+.card-zoom-out {
+    transform: scale(0.8);
+    transform-origin: center center;
+    transition: transform 0.3s ease; /* Transizione плавный */
+  }
+  
+  .card-zoom-out:hover {
+    transform: scale(1.2);
+  }

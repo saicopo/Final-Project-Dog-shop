@@ -1,0 +1,14 @@
+.card-dog{width: 33%;
+margin: 2px solid black;
+padding: 0px;
+width: 100%;
+}
+
+.dog-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dog-list li {
+    list-style: url(puntina.svg);
+}

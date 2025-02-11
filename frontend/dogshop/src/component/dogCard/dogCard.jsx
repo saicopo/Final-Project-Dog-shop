@@ -1,35 +1,41 @@
-import React, { useEffect, useState } from "react";
-import { Col, Card } from "react-bootstrap";
-import { Link } from "react-router";
-const DogCard = ({ _id, Name}) => {
-  const [imgdogs, setImgDogs] = useState([]);
-  const fetchImgDogs = async () => {
-    try {
-      const response = await fetch(`https://dog.ceo/api/breeds/image/random`);
-      const data = await response.json();
-      setImgDogs(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  console.log(imgdogs);
-
-  useEffect(() => {
-    fetchImgDogs();
-  }, []);
-
-  return (
-    <Col xs={12} md={6} lg={4}>
+import React from 'react';
+import { Col, Card } from 'react-bootstrap';
+import { Link } from 'react-router'; 
+import "./DogCard.css"
+const DogCard = ({ Name, Image, _id }) => {
+  
+    
+    
+    return (
+        
       <Link className="text-decoration-none" to={`/dog/${_id}`}>
-        <Card className="shadow-sm">
-          <Card.Img className="img-fluid w-75 h-75" variant="top" src={imgdogs.message} />
+        <Card className="shadow-sm h-100 card-zoom-out">
+          {Image ? (
+            <Card.Img
+              variant="top"
+              src={Image}
+              alt={Name}
+              style={{
+                objectFit: "contain", 
+                height: "200px", 
+                width: "100%" 
+              }}
+            />
+          ) : (
+            <Card.Img
+              variant="top"
+              src="https://via.placeholder.com/150"
+              alt="Immagine in caricamento..."
+              style={{ objectFit: "contain", height: "200px", width: "100%" }}
+            />
+          )}
           <Card.Body>
-            <Card.Title>{Name}</Card.Title>
+            <Card.Title className="mb-0">{Name}</Card.Title>
           </Card.Body>
         </Card>
       </Link>
-    </Col>
-  );
+    
+    );
 };
 
 export default DogCard;

@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.titolo-home{ font-family: "Sigmar One", serif;
+  font-weight: bolder;
+  font-style: normal;}

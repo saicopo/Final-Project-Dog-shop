@@ -6,12 +6,12 @@ const sellerSchema= new mongoose.Schema({
     email: String,
     address: String,
     image: String,
-    dogs:[{
+    seller_dog:[{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Dog"
+        ref: "dogs"
     }]
 })
- const Seller = mongoose.model("sellers", sellerSchema);
+ const Seller = mongoose.model(process.env.SELLER_COLLECTION, sellerSchema);
 
 
  export default Seller

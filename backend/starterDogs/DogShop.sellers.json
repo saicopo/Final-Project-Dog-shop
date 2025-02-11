@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7b9"
+  },
+  "Name": "Luca",
+  "Surname": "Rossi",
+  "Email": "luca.rossi@example.com",
+  "Address": "Via Roma 10, Milano",
+  "Image": "https://example.com/luca.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7ba"
+  },
+  "Name": "Marco",
+  "Surname": "Bianchi",
+  "Email": "marco.bianchi@example.com",
+  "Address": "Piazza Duomo 5, Firenze",
+  "Image": "https://example.com/marco.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bb"
+  },
+  "Name": "Elena",
+  "Surname": "Verdi",
+  "Email": "elena.verdi@example.com",
+  "Address": "Corso Vittorio 22, Torino",
+  "Image": "https://example.com/elena.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bc"
+  },
+  "Name": "Giovanni",
+  "Surname": "Neri",
+  "Email": "giovanni.neri@example.com",
+  "Address": "Via Dante 7, Napoli",
+  "Image": "https://example.com/giovanni.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bd"
+  },
+  "Name": "Francesca",
+  "Surname": "Moretti",
+  "Email": "francesca.moretti@example.com",
+  "Address": "Viale Mazzini 15, Roma",
+  "Image": "https://example.com/francesca.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7be"
+  },
+  "Name": "Alessandro",
+  "Surname": "Galli",
+  "Email": "alessandro.galli@example.com",
+  "Address": "Via Garibaldi 8, Bologna",
+  "Image": "https://example.com/alessandro.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bf"
+  },
+  "Name": "Martina",
+  "Surname": "Russo",
+  "Email": "martina.russo@example.com",
+  "Address": "Piazza San Marco 3, Venezia",
+  "Image": "https://example.com/martina.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7c0"
+  },
+  "Name": "Davide",
+  "Surname": "Ferrari",
+  "Email": "davide.ferrari@example.com",
+  "Address": "Corso Garibaldi 20, Genova",
+  "Image": "https://example.com/davide.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7c1"
+  },
+  "Name": "Sara",
+  "Surname": "Fontana",
+  "Email": "sara.fontana@example.com",
+  "Address": "Via Milano 14, Palermo",
+  "Image": "https://example.com/sara.jpg",
+  "seller_dog": []
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7c2"
+  },
+  "Name": "Antonio",
+  "Surname": "Colombo",
+  "Email": "antonio.colombo@example.com",
+  "Address": "Via Napoli 30, Bari",
+  "Image": "https://example.com/antonio.jpg",
+  "seller_dog": []
+}]

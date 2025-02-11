@@ -10,21 +10,20 @@ const getAllDogs = async (req, res) => {
 };
 
 const getDogsById = async (req, res) => {
-  try {
-    const dogs = await Dog.findById(req.params.id);
-    res.status(200).json(dogs);
-
-    const dog = await Autor.findById(req.params.id);
-
-    if (!dog) {
-      return res.status(404).json({ message: "Cucciolo non trovato" });
+    try {
+      const dog = await Dog.findById(req.params.id); // Cerca il cane
+  
+      if (!dog) {
+        return res.status(404).json({ message: "Cucciolo non trovato" }); // Se non trovato, esci subito
+      }
+  
+      // Se il cane è stato trovato, invia *una sola* risposta
+      res.status(200).json(dog);
+  
+    } catch (error) {
+      res.status(500).json({ message: error.message });
     }
-    res.status(200).json(dog);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-};
-
+  };
 const createDog = async (req, res) => {
   try {
     const dog = await Dog.create(req.body);
