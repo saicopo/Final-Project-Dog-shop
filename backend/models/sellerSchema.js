@@ -1,11 +1,13 @@
 import mongoose from "mongoose";
+import 'dotenv/config';
+
 
 const sellerSchema= new mongoose.Schema({
-    name: String,
-    surname: String,
-    email: String,
-    address: String,
-    image: String,
+    Name: String,
+    Surname: String,
+    Email: String,
+    Address: String,
+    Image: String,
     seller_dog:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: "dogs"
@@ -13,5 +15,6 @@ const sellerSchema= new mongoose.Schema({
 })
  const Seller = mongoose.model(process.env.SELLER_COLLECTION, sellerSchema);
 
+ 
 
  export default Seller

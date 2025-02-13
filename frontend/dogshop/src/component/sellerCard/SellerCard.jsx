@@ -25,8 +25,7 @@ const SellerCard = ({seller,index}) => {
                 className="rounded-circle seller-image"
                 />
             <Card.Title className='d-flex justify-content-center fs-5'> 
-               {Name} 
-                {Surname}
+               {Name} {Surname}
             </Card.Title>
             
             <Card.Text>

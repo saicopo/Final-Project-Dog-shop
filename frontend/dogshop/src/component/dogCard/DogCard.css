@@ -6,4 +6,5 @@
   
   .card-zoom-out:hover {
     transform: scale(1.2);
+    background-color: rgb(221, 204, 110);
   }

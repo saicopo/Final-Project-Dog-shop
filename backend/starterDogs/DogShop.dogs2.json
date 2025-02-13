@@ -1,0 +1,427 @@
+[{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e05b"
+  },
+  "Name": "Luna",
+  "Age": 3,
+  "Breed": "Labrador Retriever",
+  "Image": "https://i.postimg.cc/wjyYCTdJ/gallery-1495031140-gettyimages-573950777.avif",
+  "Bio": "Affettuosa e giocherellona, ama stare con le persone.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7b9"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e05c"
+  },
+  "Name": "Rocky",
+  "Age": 5,
+  "Breed": "Pastore Tedesco",
+  "Image": "https://i.postimg.cc/zGHhpsVX/welsh-springer-spaniel.avif",
+  "Bio": "Intelligente e protettivo, perfetto per la guardia.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7ba"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e05d"
+  },
+  "Name": "Bella",
+  "Age": 2,
+  "Breed": "Golden Retriever",
+  "Image": "https://i.postimg.cc/Pf68HXD5/soft-coated-wheaten-terrier.avif",
+  "Bio": "Dolce e socievole, ama i bambini.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bb"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e05e"
+  },
+  "Name": "Max",
+  "Age": 4,
+  "Breed": "Bulldog Inglese",
+  "Image": "https://i.postimg.cc/2yqjrDp1/1500912970-shiba-inu.avif",
+  "Bio": "Pigro ma affettuoso, adora stare sul divano.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bc"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e05f"
+  },
+  "Name": "Daisy",
+  "Age": 1,
+  "Breed": "Beagle",
+  "Image": "https://i.postimg.cc/26gyq67Q/portuguese-water-dog.avif",
+  "Bio": "Curiosa ed energica, sempre pronta all'avventura.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7b9"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e060"
+  },
+  "Name": "Charlie",
+  "Age": 6,
+  "Breed": "Border Collie",
+  "Image": "https://i.postimg.cc/52XBTHkJ/1500303002-cairn-terrier.avif",
+  "Bio": "Estremamente intelligente e attivo, perfetto per lo sport.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c2"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e061"
+  },
+  "Name": "Milo",
+  "Age": 3,
+  "Breed": "Jack Russell Terrier",
+  "Image": "https://i.postimg.cc/LsYMJVCW/labrador-retriever.avif",
+  "Bio": "Vivace e testardo, ama correre e giocare.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c2"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e062"
+  },
+  "Name": "Coco",
+  "Age": 4,
+  "Breed": "Barboncino",
+  "Image": "https://i.postimg.cc/BQS9T37H/dalmatian.avif",
+  "Bio": "Elegante e amichevole, si adatta bene alla vita in appartamento.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c2"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e063"
+  },
+  "Name": "Bruno",
+  "Age": 5,
+  "Breed": "Rottweiler",
+  "Image": "https://i.postimg.cc/Yqdc8PTV/bernese-mountain-dog.avif",
+  "Bio": "Leale e protettivo, ma dolce con la famiglia.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c1"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e064"
+  },
+  "Name": "Sophie",
+  "Age": 2,
+  "Breed": "Shih Tzu",
+  "Image": "https://i.postimg.cc/sgxkLcr2/gallery-gettyimages-485681215.avif",
+  "Bio": "Affettuosa e testarda, ama essere coccolata.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c1"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e065"
+  },
+  "Name": "Rex",
+  "Age": 7,
+  "Breed": "Dobermann",
+  "Image": "https://i.postimg.cc/vTPP7JDt/dachshund.avif",
+  "Bio": "Forte e coraggioso, ma molto fedele al padrone.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c1"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e066"
+  },
+  "Name": "Bobby",
+  "Age": 3,
+  "Breed": "Cocker Spaniel",
+  "Image": "https://i.postimg.cc/ncPRXfyH/gettyimages-149263578.avif",
+  "Bio": "Allegro e vivace, ama correre nei prati.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c0"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e067"
+  },
+  "Name": "Nala",
+  "Age": 2,
+  "Breed": "Husky Siberiano",
+  "Image": "https://i.postimg.cc/bvXmRHYW/gettyimages-179494696.avif",
+  "Bio": "Indipendente e giocosa, ha bisogno di molto esercizio.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c0"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e068"
+  },
+  "Name": "Oscar",
+  "Age": 6,
+  "Breed": "Bassotto",
+  "Image": "https://i.postimg.cc/SRKdKgV2/gettyimages-147786673.avif",
+  "Bio": "Determinato e curioso, ama scavare e inseguire.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7c0"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e069"
+  },
+  "Name": "Zoe",
+  "Age": 4,
+  "Breed": "Chihuahua",
+  "Image": "https://i.postimg.cc/KcsrNrJf/shetland-sheep-dog.avif",
+  "Bio": "Piccola ma coraggiosa, ama stare in braccio.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bf"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e06a"
+  },
+  "Name": "Tyson",
+  "Age": 5,
+  "Breed": "Dogo Argentino",
+  "Image": "https://i.postimg.cc/zXbwPbQr/gettyimages-462376265.avif",
+  "Bio": "Forte e leale, ha bisogno di un padrone esperto.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bf"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e06b"
+  },
+  "Name": "Lilly",
+  "Age": 3,
+  "Breed": "Cavalier King Charles Spaniel",
+  "Image": "https://i.postimg.cc/6TJ8P37W/pit-bull.avif",
+  "Bio": "Dolce e affettuosa, perfetta per la compagnia.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bf"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e06c"
+  },
+  "Name": "Duke",
+  "Age": 4,
+  "Breed": "Alano",
+  "Image": "https://i.postimg.cc/5NLg2QSm/australian-shepherd.avif",
+  "Bio": "Gigante buono, molto affettuoso con la famiglia.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7be"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e06d"
+  },
+  "Name": "Maya",
+  "Age": 2,
+  "Breed": "Samoyedo",
+  "Image": "https://i.postimg.cc/V6JBQJNn/pembroke-welsh-corgi.avif",
+  "Bio": "Sempre sorridente, ama giocare con tutti.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7be"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e06e"
+  },
+  "Name": "Zeus",
+  "Age": 6,
+  "Breed": "Pitbull",
+  "Image": "https://i.postimg.cc/dVWysJpB/gettyimages-464163411.avif",
+  "Bio": "Molto fedele e protettivo, ha bisogno di una guida sicura.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7be"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e06f"
+  },
+  "Name": "Kira",
+  "Age": 3,
+  "Breed": "Akita Inu",
+  "Image": "https://i.postimg.cc/76zGn06s/lonely-pug-royalty-free-image-1652974264.avif",
+  "Bio": "Indipendente ma fedele, molto dignitosa.",
+  "owner": "67ab5c4dba3abedfa060b7bd"
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e070"
+  },
+  "Name": "Leo",
+  "Age": 4,
+  "Breed": "Shiba Inu",
+  "Image": "https://i.postimg.cc/d3mhzFGG/shih-tzu-little-dog-royalty-free-image-1652927214.avif",
+  "Bio": "Vivace e astuto, ama le passeggiate lunghe.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bd"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e071"
+  },
+  "Name": "Argo",
+  "Age": 5,
+  "Breed": "Mastino Napoletano",
+  "Image": "https://i.postimg.cc/HsdcbJCz/chow-chow-portrait-royalty-free-image-1652926953.avif",
+  "Bio": "Calmo e protettivo, un perfetto guardiano.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bd"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e072"
+  },
+  "Name": "Apollo",
+  "Age": 3,
+  "Breed": "Dalmata",
+  "Image": "https://i.postimg.cc/CxKR6W5f/little-cute-maltipoo-puppy-royalty-free-image-1652926025.avif",
+  "Bio": "Energico e amichevole, ama giocare all'aperto.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bc"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e073"
+  },
+  "Name": "Ginger",
+  "Age": 2,
+  "Breed": "Bulldog Francese",
+  "Image": "https://i.postimg.cc/N0GX6Kqm/download-1.jpg",
+  "Bio": "Affettuosa e socievole, perfetta per la vita in appartamento.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bc"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e074"
+  },
+  "Name": "Thor",
+  "Age": 4,
+  "Breed": "Schnauzer",
+  "Image": "https://i.postimg.cc/kG6ynZMj/ralu-gal-G8c-B8h-Y3yv-U-unsplash.jpg",
+  "Bio": "Intelligente e leale, ottimo cane da guardia.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bc"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e075"
+  },
+  "Name": "Luna",
+  "Age": 5,
+  "Breed": "Weimaraner",
+  "Image": "https://i.postimg.cc/XqRkX8pn/karsten-winegeart-nwe2qg-Ah-T4k-unsplash.jpg",
+  "Bio": "Molto attiva e affettuosa, ha bisogno di tanto esercizio.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bb"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e076"
+  },
+  "Name": "Jack",
+  "Age": 3,
+  "Breed": "Australian Shepherd",
+  "Image": "https://i.postimg.cc/mDrwnkvW/jamie-street-DZ3ixp-NPt7c-unsplash.jpg",
+  "Bio": "Estremamente intelligente e agile, perfetto per l'addestramento.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bb"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e077"
+  },
+  "Name": "Maggie",
+  "Age": 6,
+  "Breed": "Papillon",
+  "Image": "https://i.postimg.cc/Gmkq8ZFV/richard-brutyo-Sg3-Xwu-Epyb-U-unsplash.jpg",
+  "Bio": "Vivace e allegra, ama stare con la famiglia.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7bb"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e078"
+  },
+  "Name": "Diesel",
+  "Age": 4,
+  "Breed": "Boxer",
+  "Image": "https://i.postimg.cc/hPQCgJfS/alvan-nee-8g0-D8-Zf-FXy-A-unsplash.jpg",
+  "Bio": "Protettivo ma dolce, adatto a famiglie attive.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7ba"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e079"
+  },
+  "Name": "Nina",
+  "Age": 2,
+  "Breed": "Whippet",
+  "Image": "https://i.postimg.cc/qB5m9cBb/ash-v0-MCll-HY9-M-unsplash.jpg",
+  "Bio": "Elegante e veloce, adora correre nei parchi.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7ba"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e07a"
+  },
+  "Name": "Simba",
+  "Age": 5,
+  "Breed": "San Bernardo",
+  "Image": "https://i.postimg.cc/j2LMD2c4/david-lezcano-m-Doa-GTr-Uw-unsplash.jpg",
+  "Bio": "Gigante buono, molto paziente e affettuoso.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7ba"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67a4daeca12233ecbb99e07b"
+  },
+  "Name": "Oscar",
+  "Age": 3,
+  "Breed": "Pinscher",
+  "Image": "https://i.postimg.cc/c4vzH95G/karsten-winegeart-BJaq-Pa-H6-AGQ-unsplash.jpg",
+  "Bio": "Piccolo ma coraggioso, sempre vigile e attento.",
+  "owner": [
+    "67ab5c4dba3abedfa060b7b9"
+  ]
+}]
