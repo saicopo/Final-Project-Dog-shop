@@ -79,6 +79,7 @@ const NavBar = () => {
                   onClick={() => {
                     localStorage.removeItem("token");
                     setIsLoggedIn(false);
+                    window.location.reload()
                   }}
                   className="navDropdown"
                 >

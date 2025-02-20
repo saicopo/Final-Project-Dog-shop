@@ -30,6 +30,12 @@ const RegistrationPopup = ({ show, onHide }) => {
     setError(null);
     setSuccess(null);
     setLoading(true);
+    
+    if (password.length < 8) { 
+      setError("La password deve contenere almeno 8 caratteri.");
+      setLoading(false);
+      return;
+  }
 
     if (password !== confirmPassword) {
       setError("Le password non corrispondono.");
@@ -63,6 +69,7 @@ const RegistrationPopup = ({ show, onHide }) => {
       setPassword("");
       setConfirmPassword("");
       setImage("");
+      window.location.reload()
     } catch (error) {
       console.error(error);
       setError(error.message);

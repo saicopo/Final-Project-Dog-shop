@@ -26,7 +26,7 @@ const upload = multer({ storage: storage });
 const router = express.Router();
 
 // Route che non ciede autenticazione
-router.post('/', upload.single('image'), createSeller); // Applica Multer qui
+router.post('/', upload.single('image'), createSeller);
 router.post('/login', loginSeller);
 router.get('/', getSeller);
 router.get('/:id', getSellerById);

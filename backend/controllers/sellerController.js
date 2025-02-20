@@ -31,7 +31,7 @@ export const getSellerById = async (req, res) => {
 
 export const createSeller = async (req, res) => {
   try {
-    console.log(req.body)
+    console.log(req.body);
     const name = req.body.name;
     const surname = req.body.surname;
     const email = req.body.email;
@@ -45,7 +45,7 @@ export const createSeller = async (req, res) => {
     console.log(req.file);
 
     if (req.file) {
-      imageUrl = `http://localhost:3001/uploads/${req.file.filename}`
+      imageUrl = `http://localhost:3001/uploads/${req.file.filename}`;
     }
     const newSeller = new Seller({
       name,
@@ -139,7 +139,9 @@ export const uploadSellerImage = async (req, res) => {
 
 export const loginSeller = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    console.log(req.body);
+    const email = req.body.email;
+    const password = req.body.password;
 
     const seller = await Seller.findOne({ email });
 

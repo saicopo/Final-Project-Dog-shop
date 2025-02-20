@@ -8,7 +8,7 @@ import { router as dogsRouter } from "./routes/dogRoutes.js";
 import { router as sellerRouter } from "./routes/sellerRoutes.js";
 
 const server = express();
-
+server.use(express.json()); 
 server.use(cors());
 connectDB();
 

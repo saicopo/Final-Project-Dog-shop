@@ -10,17 +10,24 @@ const AccessPopup = ({ show, onHide, onLogin }) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
+        const requestData = { // Rinomino la variabile
+            email: email,
+            password: password,
+        };
+       
         setError(null);
         setLoading(true);
 
         try {
-            const response = await fetch("http://localhost:3001/api/sellers/login", { 
-                method: 'POST',
+            const response = await fetch("http://localhost:3001/api/sellers/login", {
+                
+                method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password }), 
+                body: JSON.stringify(requestData),
             });
+            
 
             if (!response.ok) {
                 const data = await response.json();
