@@ -2,109 +2,153 @@
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7b9"
   },
-  "Name": "Luca",
-  "Surname": "Rossi",
-  "Email": "luca.rossi@example.com",
-  "Address": "Via Roma 10, Milano",
-  "Image": "https://example.com/luca.jpg",
-  "seller_dog": []
+  "name": "Luca",
+  "surname": "Rossi",
+  "email": "luca.rossi@example.com",
+  "address": "Via Roma 10, Milano",
+  "image": "https://i.postimg.cc/05Bg9rNY/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e05b",
+    "67a4daeca12233ecbb99e05c",
+    "67a4daeca12233ecbb99e07b",
+    "67a4daeca12233ecbb99e05f"
+  ]
 },
 {
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7ba"
   },
-  "Name": "Marco",
-  "Surname": "Bianchi",
-  "Email": "marco.bianchi@example.com",
-  "Address": "Piazza Duomo 5, Firenze",
-  "Image": "https://example.com/marco.jpg",
-  "seller_dog": []
+  "name": "Marco",
+  "surname": "Bianchi",
+  "email": "marco.bianchi@example.com",
+  "address": "Piazza Duomo 5, Firenze",
+  "image": "https://i.postimg.cc/qvpWLKDd/logan-weaver-lgnwvr-p0-B7ueo-Zz8-E-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e07a",
+    "67a4daeca12233ecbb99e079",
+    "67a4daeca12233ecbb99e078",
+    "67a4daeca12233ecbb99e05c"
+  ]
 },
 {
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7bb"
   },
-  "Name": "Elena",
-  "Surname": "Verdi",
-  "Email": "elena.verdi@example.com",
-  "Address": "Corso Vittorio 22, Torino",
-  "Image": "https://example.com/elena.jpg",
-  "seller_dog": []
+  "name": "Elena",
+  "surname": "Verdi",
+  "email": "elena.verdi@example.com",
+  "address": "Corso Vittorio 22, Torino",
+  "image": "https://i.postimg.cc/zfZ88v0t/meritt-thomas-ao-Q4-DYZLE-E-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e077",
+    "67a4daeca12233ecbb99e076",
+    "67a4daeca12233ecbb99e075",
+    "67a4daeca12233ecbb99e05d"
+  ]
 },
 {
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7bc"
   },
-  "Name": "Giovanni",
-  "Surname": "Neri",
-  "Email": "giovanni.neri@example.com",
-  "Address": "Via Dante 7, Napoli",
-  "Image": "https://example.com/giovanni.jpg",
-  "seller_dog": []
+  "name": "Giovanni",
+  "surname": "Neri",
+  "email": "giovanni.neri@example.com",
+  "address": "Via Dante 7, Napoli",
+  "image": "https://i.postimg.cc/v8VRHbxC/ludovic-migneault-EZ4-TYg-XPNWk-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e074",
+    "67a4daeca12233ecbb99e073",
+    "67a4daeca12233ecbb99e072",
+    "67a4daeca12233ecbb99e05e"
+  ]
 },
 {
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7bd"
   },
-  "Name": "Francesca",
-  "Surname": "Moretti",
-  "Email": "francesca.moretti@example.com",
-  "Address": "Viale Mazzini 15, Roma",
-  "Image": "https://example.com/francesca.jpg",
-  "seller_dog": []
+  "name": "Francesca",
+  "surname": "Moretti",
+  "email": "francesca.moretti@example.com",
+  "address": "Viale Mazzini 15, Roma",
+  "image": "https://i.postimg.cc/RFvmJ8rw/matheus-ferrero-W7b3e-DUb-2-I-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e071",
+    "67a4daeca12233ecbb99e06f",
+    "67a4daeca12233ecbb99e070"
+  ]
 },
 {
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7be"
   },
-  "Name": "Alessandro",
-  "Surname": "Galli",
-  "Email": "alessandro.galli@example.com",
-  "Address": "Via Garibaldi 8, Bologna",
-  "Image": "https://example.com/alessandro.jpg",
-  "seller_dog": []
+  "name": "Alessandro",
+  "surname": "Galli",
+  "email": "alessandro.galli@example.com",
+  "address": "Via Garibaldi 8, Bologna",
+  "image": "https://i.postimg.cc/1tRx3q6H/charlie-green-3-Jmf-ENc-L24-M-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e06e",
+    "67a4daeca12233ecbb99e06d",
+    "67a4daeca12233ecbb99e06c"
+  ]
 },
 {
   "_id": {
     "$oid": "67ab5c4dba3abedfa060b7bf"
   },
-  "Name": "Martina",
-  "Surname": "Russo",
-  "Email": "martina.russo@example.com",
-  "Address": "Piazza San Marco 3, Venezia",
-  "Image": "https://example.com/martina.jpg",
-  "seller_dog": []
+  "name": "Martina",
+  "surname": "Russo",
+  "email": "martina.russo@example.com",
+  "address": "Piazza San Marco 3, Venezia",
+  "image": "https://i.postimg.cc/rsP2bwD9/jonathan-borba-n1-B6ft-PB5-Eg-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e06b",
+    "67a4daeca12233ecbb99e06a",
+    "67a4daeca12233ecbb99e069"
+  ]
 },
 {
-  "_id": {
-    "$oid": "67ab5c4dba3abedfa060b7c0"
-  },
-  "Name": "Davide",
-  "Surname": "Ferrari",
-  "Email": "davide.ferrari@example.com",
-  "Address": "Corso Garibaldi 20, Genova",
-  "Image": "https://example.com/davide.jpg",
-  "seller_dog": []
+"_id": {
+  "$oid": "67ab5c4dba3abedfa060b7c0"
+},
+"name": "Davide",
+"surname": "Ferrari",
+"email": "davide.ferrari@example.com",
+"address": "Corso Garibaldi 20, Genova",
+"image": "https://i.postimg.cc/v8JsWcdQ/nate-J5-U-22o1ubw-unsplash.jpg",
+"seller_dog": [
+  "67a4daeca12233ecbb99e068",
+  "67a4daeca12233ecbb99e067",
+  "67a4daeca12233ecbb99e066"
+]
 },
 {
-  "_id": {
-    "$oid": "67ab5c4dba3abedfa060b7c1"
-  },
-  "Name": "Sara",
-  "Surname": "Fontana",
-  "Email": "sara.fontana@example.com",
-  "Address": "Via Milano 14, Palermo",
-  "Image": "https://example.com/sara.jpg",
-  "seller_dog": []
+"_id": {
+  "$oid": "67ab5c4dba3abedfa060b7c1"
+},
+"name": "Sara",
+"surname": "Fontana",
+"email": "sara.fontana@example.com",
+"address": "Via Milano 14, Palermo",
+"image": "https://i.postimg.cc/FswQV15r/microsoft-365-7m-Bict-B-urk-unsplash.jpg",
+"seller_dog": [
+  "67a4daeca12233ecbb99e065",
+  "67a4daeca12233ecbb99e064",
+  "67a4daeca12233ecbb99e063"
+]
 },
 {
-  "_id": {
-    "$oid": "67ab5c4dba3abedfa060b7c2"
-  },
-  "Name": "Antonio",
-  "Surname": "Colombo",
-  "Email": "antonio.colombo@example.com",
-  "Address": "Via Napoli 30, Bari",
-  "Image": "https://example.com/antonio.jpg",
-  "seller_dog": []
+"_id": {
+  "$oid": "67ab5c4dba3abedfa060b7c2"
+},
+"name": "Antonio",
+"surname": "Colombo",
+"email": "antonio.colombo@example.com",
+"address": "Via Napoli 30, Bari",
+"image": "https://i.postimg.cc/vmtFyz1T/leilani-angel-K84vnnzxm-TQ-unsplash.jpg",
+"seller_dog": [
+  "67a4daeca12233ecbb99e062",
+  "67a4daeca12233ecbb99e061",
+  "67a4daeca12233ecbb99e060"
+]
 }]

@@ -12,3 +12,6 @@ width: 100%;
 .dog-list li {
     list-style: url(puntina.svg);
 }
+
+.seller-info{border: 1px solid black;
+margin: 0;}

@@ -88,8 +88,8 @@ const DogDetails = () => {
             {seller ? (
               <div className="d-flex align-items-center"> 
                 <Card.Img className="owner-image"
-                  src={seller.Image || "placeholder_url"} 
-                  alt={seller.Name}
+                  src={seller.image || "placeholder_url"} 
+                  alt={seller.name}
                   roundedCircle 
                   style={{
                     width: "50px",
@@ -100,10 +100,10 @@ const DogDetails = () => {
                 />
                 <div> 
                   <Card.Text>
-                    <strong>Nome:</strong> {seller.Name}
+                    <strong>Nome:</strong> {seller.name}
                   </Card.Text>
                   <Card.Text>
-                    <strong>Cognome:</strong> {seller.Surname}
+                    <strong>Cognome:</strong> {seller.surname}
                   </Card.Text>
                 </div>
               </div>

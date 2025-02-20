@@ -1,0 +1,154 @@
+[{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7b9"
+  },
+  "name": "Luca",
+  "surname": "Rossi",
+  "email": "luca.rossi@example.com",
+  "address": "Via Roma 10, Milano",
+  "image": "https://i.postimg.cc/05Bg9rNY/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e05b",
+    "67a4daeca12233ecbb99e05c",
+    "67a4daeca12233ecbb99e07b",
+    "67a4daeca12233ecbb99e05f"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7ba"
+  },
+  "name": "Marco",
+  "surname": "Bianchi",
+  "email": "marco.bianchi@example.com",
+  "address": "Piazza Duomo 5, Firenze",
+  "image": "https://i.postimg.cc/qvpWLKDd/logan-weaver-lgnwvr-p0-B7ueo-Zz8-E-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e07a",
+    "67a4daeca12233ecbb99e079",
+    "67a4daeca12233ecbb99e078",
+    "67a4daeca12233ecbb99e05c"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bb"
+  },
+  "name": "Elena",
+  "surname": "Verdi",
+  "email": "elena.verdi@example.com",
+  "address": "Corso Vittorio 22, Torino",
+  "image": "https://i.postimg.cc/zfZ88v0t/meritt-thomas-ao-Q4-DYZLE-E-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e077",
+    "67a4daeca12233ecbb99e076",
+    "67a4daeca12233ecbb99e075",
+    "67a4daeca12233ecbb99e05d"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bc"
+  },
+  "name": "Giovanni",
+  "surname": "Neri",
+  "email": "giovanni.neri@example.com",
+  "address": "Via Dante 7, Napoli",
+  "image": "https://i.postimg.cc/v8VRHbxC/ludovic-migneault-EZ4-TYg-XPNWk-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e074",
+    "67a4daeca12233ecbb99e073",
+    "67a4daeca12233ecbb99e072",
+    "67a4daeca12233ecbb99e05e"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bd"
+  },
+  "name": "Francesca",
+  "surname": "Moretti",
+  "email": "francesca.moretti@example.com",
+  "address": "Viale Mazzini 15, Roma",
+  "image": "https://i.postimg.cc/RFvmJ8rw/matheus-ferrero-W7b3e-DUb-2-I-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e071",
+    "67a4daeca12233ecbb99e06f",
+    "67a4daeca12233ecbb99e070"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7be"
+  },
+  "name": "Alessandro",
+  "surname": "Galli",
+  "email": "alessandro.galli@example.com",
+  "address": "Via Garibaldi 8, Bologna",
+  "image": "https://i.postimg.cc/1tRx3q6H/charlie-green-3-Jmf-ENc-L24-M-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e06e",
+    "67a4daeca12233ecbb99e06d",
+    "67a4daeca12233ecbb99e06c"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7bf"
+  },
+  "name": "Martina",
+  "surname": "Russo",
+  "email": "martina.russo@example.com",
+  "address": "Piazza San Marco 3, Venezia",
+  "image": "https://i.postimg.cc/rsP2bwD9/jonathan-borba-n1-B6ft-PB5-Eg-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e06b",
+    "67a4daeca12233ecbb99e06a",
+    "67a4daeca12233ecbb99e069"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7c0"
+  },
+  "name": "Davide",
+  "surname": "Ferrari",
+  "email": "davide.ferrari@example.com",
+  "address": "Corso Garibaldi 20, Genova",
+  "image": "https://i.postimg.cc/v8JsWcdQ/nate-J5-U-22o1ubw-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e068",
+    "67a4daeca12233ecbb99e067",
+    "67a4daeca12233ecbb99e066"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7c1"
+  },
+  "name": "Sara",
+  "surname": "Fontana",
+  "email": "sara.fontana@example.com",
+  "address": "Via Milano 14, Palermo",
+  "image": "https://i.postimg.cc/FswQV15r/microsoft-365-7m-Bict-B-urk-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e065",
+    "67a4daeca12233ecbb99e064",
+    "67a4daeca12233ecbb99e063"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ab5c4dba3abedfa060b7c2"
+  },
+  "name": "Antonio",
+  "surname": "Colombo",
+  "email": "antonio.colombo@example.com",
+  "address": "Via Napoli 30, Bari",
+  "image": "https://i.postimg.cc/vmtFyz1T/leilani-angel-K84vnnzxm-TQ-unsplash.jpg",
+  "seller_dog": [
+    "67a4daeca12233ecbb99e062",
+    "67a4daeca12233ecbb99e061",
+    "67a4daeca12233ecbb99e060"
+  ]
+}]

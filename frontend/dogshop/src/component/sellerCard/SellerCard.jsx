@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 
 
 const SellerCard = ({seller,index}) => {
-  const { Name, Address, Image, _id,Email,Surname } = seller
+  const { name, address, image, _id,email,surname } = seller
     
    
 
@@ -18,23 +18,25 @@ const SellerCard = ({seller,index}) => {
            
        
         <Card.Body className='w-100'>
-            <Card.Img
-                variant="top"
-                src={Image}
-                alt={Name}
-                className="rounded-circle seller-image"
-                />
+        <div className="image-container">
+                    <Card.Img
+                        variant="top"
+                        src={image}
+                        alt={name}
+                        className="seller-image"
+                    />
+                </div>
             <Card.Title className='d-flex justify-content-center fs-5'> 
-               {Name} {Surname}
+               {name} {surname}
             </Card.Title>
             
             <Card.Text>
             <i  class="bi bi-envelope me-2"></i>
-                 {Email}
+                 {email}
             </Card.Text>
             <Card.Text>
             <i  class="bi bi-geo-alt me-2"></i>
-                 {Address}
+                 {address}
             </Card.Text>
         </Card.Body>
     </Card>

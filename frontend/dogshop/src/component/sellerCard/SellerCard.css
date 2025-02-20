@@ -1,9 +1,8 @@
 .seller-card {
-    transition: transform 0.2s ;
+    transition: transform 0.2s;
     border-radius: 1rem;
-  width: 100%;
-    
-    
+    width: 90%;
+    max-width: 350px; 
     
 }
 
@@ -12,13 +11,36 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
+.image-container { /* Contenitore immagine */
+    width: 100%;
+    height: 200px; /* Altezza desiderata */
+    overflow: hidden;
+}
 
 .seller-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     border: 3px solid white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .seller-card .card-body {
-    width: 100% !important;
+    width: 100% 
+}
+
+
+@media (min-width: 768px) {
+    .seller-card {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .seller-card {
+        width:100%
+    }
 }

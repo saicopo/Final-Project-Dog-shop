@@ -9,6 +9,7 @@ import NavBar from './component/navbar/Navbar';
 import DogDetails from './views/DogDetails';
 import SellerList from './views/SellerList';
 import SellerDetails from './views/SellerDetails';
+import NewDog from './views/NewDog';
 
 
 
@@ -23,6 +24,7 @@ function App() {
   <Route path="/dog/:id" element={<DogDetails/>}/>
   <Route path='/seller' element={<SellerList/>}/>
   <Route path='/seller/:id' element={<SellerDetails/>}/>
+  <Route path='/newDog' element={<NewDog/>}/>
 </Routes>
    </BrowserRouter>
     </div>
