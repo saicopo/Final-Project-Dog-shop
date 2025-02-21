@@ -1,3 +1,13 @@
+.navbar {
+  position: fixed; 
+    top: 0;          
+    width: 100%;      
+    z-index: 1000; 
+}
+body {
+  padding-top:200px; /* Aggiunge spazio in cima al contenuto per evitare sovrapposizioni (regola il valore in base all'altezza della tua navbar) */
+}
+
 .navDropdown {
     transition: background-color 0.3s ease, color 0.3s ease;
   }

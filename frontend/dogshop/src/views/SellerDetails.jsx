@@ -12,9 +12,12 @@ const SellerDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+  const token = localStorage.getItem("token");
   const navigateNewDog = () => {
     navigate("/newDog");
+  };
+  const navigateUpdateSeller = () => {
+    navigate(`/updateSeller/${id}`);
   };
   const fetchSellerDetails = async () => {
     setLoading(true);
@@ -39,6 +42,32 @@ const SellerDetails = () => {
       setLoading(false);
     }
   };
+  const DeleteSeller = async () => {
+    if (window.confirm("Sei sicuro di voler eliminare questo profilo?")) {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `http://localhost:3001/api/sellers/${id}`,
+          {
+            method: "DELETE",
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+          
+        );
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        navigate("/seller");
+      } catch (error) {
+        console.error(error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+  };
 
   useEffect(() => {
     fetchSellerDetails();
@@ -56,7 +85,12 @@ const SellerDetails = () => {
     return <div>Venditore non trovato.</div>;
   }
 
-  const { name, surname, address, email, seller_dog, image } = seller;
+  const { name, surname, address, email, seller_dog, sellerID, image } = seller;
+  const decodedToken = JSON.parse(atob(token.split('.')[1]));
+  const userId = decodedToken.userId;
+
+  
+  const isOwner = userId === sellerID;
 
   return (
     <Container className="seller-details-container">
@@ -65,8 +99,6 @@ const SellerDetails = () => {
         <Col xs={12} md={6} lg={4} className="text-center">
           <img src={image} alt={name} className="img-fluid w-75" />
           <div className="d-flex flex-column align-items-center">
-          
-         
             <p className="w-75 seller-info p-2">
               <i class="bi bi-person-fill me-2 "></i>
               {name} {surname}
@@ -80,13 +112,30 @@ const SellerDetails = () => {
               {email}
             </p>
           </div>
-
-          <button
-            className="btn btn-primary w-50 mt-3"
-            onClick={navigateNewDog}
-          >
-            AGGIUNGI CUCCIOLO
-          </button>
+          <Col className="d-flex flex-column align-items-center">
+            {isOwner && ( 
+              <>
+                <button
+                  className="btn btn-primary w-50 mt-3"
+                  onClick={navigateUpdateSeller}
+                >
+                  MODIFICA PROFILO
+                </button>
+                <button
+                  className="btn btn-danger w-50 mt-3"
+                  onClick={DeleteSeller}
+                >
+                  ELIMINA PROFILO
+                </button>
+                <button
+                  className="btn btn-primary w-50 mt-3"
+                  onClick={navigateNewDog}
+                >
+                  AGGIUNGI CUCCIOLO
+                </button>
+              </>
+            )}
+          </Col>
         </Col>
 
         {seller_dog && seller_dog.length > 0 ? (

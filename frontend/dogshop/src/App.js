@@ -10,8 +10,8 @@ import DogDetails from './views/DogDetails';
 import SellerList from './views/SellerList';
 import SellerDetails from './views/SellerDetails';
 import NewDog from './views/NewDog';
-
-
+import Footer from './component/footer/Footer';
+import UpdateSeller from './views/UpdateSeller';
 
 function App() {
   return (
@@ -24,8 +24,10 @@ function App() {
   <Route path="/dog/:id" element={<DogDetails/>}/>
   <Route path='/seller' element={<SellerList/>}/>
   <Route path='/seller/:id' element={<SellerDetails/>}/>
+  <Route path='/updateSeller/:id' element={<UpdateSeller/>}/>
   <Route path='/newDog' element={<NewDog/>}/>
 </Routes>
+<Footer/>
    </BrowserRouter>
     </div>
   );

@@ -2,6 +2,7 @@ import Dog from "../models/dogsSchema.js";
 import Seller from "../models/sellerSchema.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import 'dotenv/config';
 
 export const getSeller = async (req, res) => {
   try {
@@ -81,20 +82,32 @@ export const createSeller = async (req, res) => {
 
 export const updateSeller = async (req, res) => {
   try {
-    const id = req.params.id;
-    let updateData = req.body;
+      const sellerId = req.params.id;
+      const userId = req.user.userId; 
+      let updateData = req.body;
 
-    if (updateData.password) {
-      const salt = await bcrypt.genSalt(10);
-      updateData.password = await bcrypt.hash(updateData.password, salt);
-    }
+      
+      const seller = await Seller.findById(sellerId);
+      if (!seller) {
+          return res.status(404).json({ message: "Seller non trovato" });
+      }
 
-    const updatedSeller = await Seller.findByIdAndUpdate(id, updateData, {
-      new: true,
-    }).populate("seller_dog");
-    res.status(200).json(updatedSeller);
+      if (seller._id.toString() !== userId) {
+          return res.status(403).json({ message: "Accesso non autorizzato" });
+      }
+
+      if (updateData.password) {
+          const salt = await bcrypt.genSalt(10);
+          updateData.password = await bcrypt.hash(updateData.password, salt);
+      }
+
+      const updatedSeller = await Seller.findByIdAndUpdate(sellerId, updateData, {
+          new: true,
+      }).populate("seller_dog");
+
+      res.status(200).json(updatedSeller);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+      res.status(500).json({ message: error.message });
   }
 };
 export const deleteSeller = async (req, res) => {
@@ -139,7 +152,7 @@ export const uploadSellerImage = async (req, res) => {
 
 export const loginSeller = async (req, res) => {
   try {
-    console.log(req.body);
+    
     const email = req.body.email;
     const password = req.body.password;
 
