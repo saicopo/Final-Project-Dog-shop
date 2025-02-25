@@ -83,17 +83,18 @@ export const createSeller = async (req, res) => {
 export const updateSeller = async (req, res) => {
   try {
       const sellerId = req.params.id;
-      const userId = req.user.userId; 
       let updateData = req.body;
 
-      
       const seller = await Seller.findById(sellerId);
       if (!seller) {
           return res.status(404).json({ message: "Seller non trovato" });
       }
 
-      if (seller._id.toString() !== userId) {
-          return res.status(403).json({ message: "Accesso non autorizzato" });
+      if (req.file) {
+          updateData.image = req.file.path; 
+      } else {
+         
+          updateData.image = seller.image;
       }
 
       if (updateData.password) {

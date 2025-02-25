@@ -14,7 +14,7 @@ const SellerDetails = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
   const navigateNewDog = () => {
-    navigate("/newDog");
+    navigate(`/sellers/${id}/new-dog`);
   };
   const navigateUpdateSeller = () => {
     navigate(`/updateSeller/${id}`);
@@ -94,68 +94,71 @@ const SellerDetails = () => {
 
   return (
     <Container className="seller-details-container">
-      <h1>I Cuccioli di {name}</h1>
-      <Row className="d-flex align-items-center">
+    <h1>I Cuccioli di {name}</h1>
+    <Row className="d-flex align-items-center">
         <Col xs={12} md={6} lg={4} className="text-center">
-          <img src={image} alt={name} className="img-fluid w-75" />
-          <div className="d-flex flex-column align-items-center">
-            <p className="w-75 seller-info p-2">
-              <i class="bi bi-person-fill me-2 "></i>
-              {name} {surname}
-            </p>
-            <p className="w-75 seller-info p-2">
-              <i class="bi bi-house-door-fill me-2"></i>
-              {address}
-            </p>
-            <p className="w-75 seller-info p-2">
-              <i class="bi bi-envelope-fill me-2"></i>
-              {email}
-            </p>
-          </div>
-          <Col className="d-flex flex-column align-items-center">
-            {isOwner && ( 
-              <>
-                <button
-                  className="btn btn-primary w-50 mt-3"
-                  onClick={navigateUpdateSeller}
-                >
-                  MODIFICA PROFILO
-                </button>
-                <button
-                  className="btn btn-danger w-50 mt-3"
-                  onClick={DeleteSeller}
-                >
-                  ELIMINA PROFILO
-                </button>
-                <button
-                  className="btn btn-primary w-50 mt-3"
-                  onClick={navigateNewDog}
-                >
-                  AGGIUNGI CUCCIOLO
-                </button>
-              </>
-            )}
-          </Col>
+            <img src={image} alt={name} className="img-fluid w-75" />
+            <div className="d-flex flex-column align-items-center">
+                <p className="w-75 seller-info p-2">
+                    <i className="bi bi-person-fill me-2 "></i>
+                    {name} {surname}
+                </p>
+                <p className="w-75 seller-info p-2">
+                    <i className="bi bi-house-door-fill me-2"></i>
+                    {address}
+                </p>
+                <p className="w-75 seller-info p-2">
+                    <i className="bi bi-envelope-fill me-2"></i>
+                    {email}
+                </p>
+            </div>
+            <Col className="d-flex flex-column align-items-center">
+                {isOwner && (
+                    <>
+                        <button
+                            className="btn btn-primary w-50 mt-3"
+                            onClick={navigateUpdateSeller}
+                        >
+                            MODIFICA PROFILO
+                        </button>
+                        <button
+                            className="btn btn-danger w-50 mt-3"
+                            onClick={DeleteSeller}
+                        >
+                            ELIMINA PROFILO
+                        </button>
+
+                        <button
+                            className="btn btn-info w-50 mt-3"
+                            onClick={navigateNewDog}
+                        >
+                            AGGIUNGI CUCCIOLO
+                        </button>
+                    </>
+                )}
+            </Col>
         </Col>
 
         {seller_dog && seller_dog.length > 0 ? (
-          <Col className="d-flex dog-list" xs={12} md={6} lg={8}>
-            {seller_dog.map((dog) => (
-              <li key={dog._id}>
-                <DogCard
-                  className="card-dog"
-                  Name={dog.Name}
-                  Image={dog.Image}
-                  _id={dog._id}
-                />
-              </li>
-            ))}
-          </Col>
+            <Col className="dog-list" xs={12} md={6} lg={8}>
+                <Row xs={1} md={2} lg={3} className="g-4">
+                    {seller_dog.map((dog) => (
+                        <Col key={dog._id}>
+                            <DogCard
+                                className="card-dog"
+                                Name={dog.Name}
+                                Image={dog.Image}
+                                _id={dog._id}
+                            />
+                        </Col>
+                    ))}
+                </Row>
+            </Col>
         ) : (
-          <p>Nessun cane trovato per questo venditore.</p>
+            <p>Nessun cane trovato per questo venditore.</p>
         )}
-      </Row>
-    </Container>
+    </Row>
+</Container>
   );
 };
 

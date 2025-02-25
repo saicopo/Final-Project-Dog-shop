@@ -5,15 +5,28 @@ import {
   createDog,
   deleteDog,
   updateDog,
+  uploadDogImage
 } from "../controllers/dogController.js";
-import { authMiddleware } from "../middleware/authMiddleware.js";
+import multer from "multer";
 
 const router = express.Router();
 
+// Configurazione Multer
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, './uploads');
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + '-' + file.originalname);
+    }
+});
+
+const upload = multer({ storage: storage });
+
 router.get("/", getAllDogs);
 router.get("/:id", getDogsById);
-router.post("/",authMiddleware, createDog);
+router.post("/",upload.single('image'), createDog);
 router.delete("/:id", deleteDog);
-router.put("/:id", updateDog);
+router.put("/:id",upload.single('image'), updateDog);
 
 export { router };

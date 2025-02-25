@@ -30,10 +30,11 @@ router.post('/', upload.single('image'), createSeller);
 router.post('/login', loginSeller);
 router.get('/', getSeller);
 router.get('/:id', getSellerById);
+router.put('/:id', upload.single('image'), updateSeller);
 
 // Route che richiedono autenticazione
 router.post('/:id/image', authMiddleware, upload.single('image'), uploadSellerImage);
 router.delete('/:id', authMiddleware, deleteSeller);
-router.put('/:id', authMiddleware, updateSeller);
+
 
 export { router }; 
